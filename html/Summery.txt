@@ -1,0 +1,1 @@
+html의 모든 element는 attribute(속성)을 가질 수 있다.
