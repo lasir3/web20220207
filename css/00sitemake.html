@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .top-tap {
+            display: flex;
+            background-color: indigo;
+            font-size: 1.5em;
+            justify-content: space-between;
+            padding: 1px 10px;
+        }
+
+        .left-top,
+        .right-top {
+            display: flex;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            /* padding: 10px 4px; */
+            /* border: 2px solid cyan; */
+            box-sizing: border-box;
+            align-items: center;
+        }
+
+        .menu-item {
+            box-sizing: border-box;
+            text-align: center;
+            padding: 20px 15px;
+        }
+
+        .menu-item:hover {
+            background-color: aquamarine;
+            border-color: aquamarine;
+        }
+
+        .mid-tap {
+            display: flex;
+            background-color: black;
+            font-size: 1em;
+            justify-content: space-between;
+            padding: 1px 10px;
+        }
+
+        .left-mid,
+        .right-mid {
+            display: flex;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            align-items: center;
+            box-sizing: border-box;
+            /* border: 2px solid cyan; */
+        }
+
+
+        .menu-miditem {
+            box-sizing: border-box;
+            text-align: center;
+            padding: 10px 10px;
+        }
+
+        .menu-miditem:hover {
+            background-color: brown;
+            border-color: brown;
+            border-bottom-color: azure;
+        }
+
+        .right-img{
+            box-sizing: border-box;
+            padding-left: 10px;
+        }
+
+        .body-container {
+            display: flex;
+        }
+
+        .side-menu {
+            padding: 10px 15px;
+            background-color: rgb(34, 34, 34);
+            color: white;
+        }
+
+        .side-menu:hover {
+            background-color: darkkhaki;
+
+        }
+
+        .main-content-container {
+            flex: 1;
+            background-color: azure;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .top-tap>.left-top>.menu-item*5>lorem1^^.right-top>.menu-item*3>lorem1 -->
+    <div class="top-tap">
+        <div class="left-top">
+            <img src="../html/monochrome_large.png" width="50px" height="50px">
+            <div class="menu-item">Tutorials </div>
+            <div class="menu-item">References</div>
+            <div class="menu-item">Exercises</div>
+            <div class="menu-item">Videos</div>
+        </div>
+        <div class="right-top">
+            <div class="menu-item" style="background-color: red;">Website</div>
+            <div class="menu-item" style="background-color:midnightblue;">Paid Courses</div>
+            <div class="menu-item" style="background-color: greenyellow;">Log in</div>
+        </div>
+    </div>
+
+    <div class="mid-tap">
+        <div class="left-mid">
+            <img src="../html/home_icon.png" width="40">
+            <div class="menu-miditem">HTML</div>
+            <div class="menu-miditem">CSS</div>
+            <div class="menu-miditem">JAVASCRIPT</div>
+            <div class="menu-miditem">SQL</div>
+            <div class="menu-miditem">PYTHON</div>
+            <div class="menu-miditem">PHP</div>
+            <div class="menu-miditem">BOOTSTRAP</div>
+            <div class="menu-miditem">HOW TO</div>
+            <div class="menu-miditem">W3.CSS</div>
+            <div class="menu-miditem">JAVA</div>
+            <div class="menu-miditem">JQUERY?</div>
+            <div class="menu-miditem">C++</div>
+            <div class="menu-miditem">C#</div>
+            <div class="menu-miditem">R</div>
+            <div class="menu-miditem">React</div>
+        </div>
+        <div class="right-mid">
+            <div class="right-img"><img src="../html/halfmoon.png" width="20px"></div>
+            <div class="right-img"><img src="../html/earth.png" width="20px"></div>
+            <div class="right-img"><img src="../html/dotbogi.png" width="20px"></div>
+        </div>
+    </div>
+
+    <div class="body-container">
+        <div class="side-menu-container">
+            <!-- .side-menu*30>lorem1 -->
+            <div class="side-menu">Lorem.</div>
+            <div class="side-menu">Facere?</div>
+            <div class="side-menu">Libero?</div>
+            <div class="side-menu">Placeat!</div>
+            <div class="side-menu">Impedit.</div>
+            <div class="side-menu">Distinctio!</div>
+            <div class="side-menu">Porro!</div>
+            <div class="side-menu">Libero?</div>
+            <div class="side-menu">Consectetur.</div>
+            <div class="side-menu">Cum.</div>
+            <div class="side-menu">Et.</div>
+            <div class="side-menu">Saepe!</div>
+            <div class="side-menu">Illum.</div>
+            <div class="side-menu">Doloremque.</div>
+            <div class="side-menu">Laudantium.</div>
+            <div class="side-menu">Cum?</div>
+            <div class="side-menu">Eos!</div>
+            <div class="side-menu">Rem!</div>
+            <div class="side-menu">Molestias.</div>
+            <div class="side-menu">Ut!</div>
+            <div class="side-menu">Sed.</div>
+            <div class="side-menu">Ipsum!</div>
+            <div class="side-menu">Quae?</div>
+            <div class="side-menu">Dicta?</div>
+            <div class="side-menu">Doloribus?</div>
+            <div class="side-menu">Maxime.</div>
+            <div class="side-menu">Velit?</div>
+            <div class="side-menu">Voluptatibus!</div>
+            <div class="side-menu">Dolores.</div>
+            <div class="side-menu">Molestias.</div>
+        </div>
+        <div class="main-content-container">
+            <!-- (h1>lorem3^p>lorem)*20 -->
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae provident, tempore nam ipsum eius
+                quibusdam. Tempora, cum. Optio ea explicabo possimus facere illo adipisci praesentium, sequi dolor
+                perspiciatis incidunt quidem.</p>
+            <h1>Voluptatum, quibusdam aspernatur.</h1>
+            <p>Quos quibusdam omnis, ad dolor sint quasi mollitia sit numquam consequatur sed pariatur hic, maiores
+                asperiores vel itaque expedita ratione quae placeat excepturi. Eos quos tempore molestias numquam ea!
+                Est.</p>
+            <h1>Dolore, optio voluptatem!</h1>
+            <p>Non, cum adipisci ullam temporibus placeat velit voluptate ab neque? Ipsa tempora molestias, esse
+                reprehenderit sed quas possimus odio dolorem dolore eligendi delectus iusto, modi ullam nesciunt
+                praesentium expedita et!</p>
+            <h1>Eius, quo iste.</h1>
+            <p>Quibusdam beatae doloremque voluptatibus voluptatum dolorum in a molestiae fugit at blanditiis fuga
+                dignissimos iste, ratione vitae magni, dolorem incidunt. Placeat sequi possimus dolorem corporis
+                eveniet. Et velit temporibus delectus!</p>
+            <h1>Facere, minus necessitatibus.</h1>
+            <p>Commodi recusandae velit vero repudiandae totam quas deleniti iste incidunt iure. Fugit incidunt corporis
+                eos eveniet in excepturi illo. Eveniet, rem cupiditate reiciendis pariatur iste quibusdam animi nihil
+                doloremque nostrum.</p>
+            <h1>Velit, vitae vel.</h1>
+            <p>Non esse cupiditate natus quae odio similique debitis. Laudantium nostrum asperiores praesentium
+                voluptatem nam esse quas! Adipisci sunt, debitis ullam vitae voluptatibus, suscipit molestias magni
+                pariatur deleniti voluptates quidem itaque.</p>
+            <h1>Perferendis, dolorum nemo?</h1>
+            <p>Facere quas dolor temporibus iste distinctio? Nihil veritatis vero facere laudantium assumenda doloribus
+                corrupti tempore ullam eaque delectus? Eius et quod cumque quibusdam aperiam dolor maiores aspernatur
+                voluptatem cum nemo.</p>
+            <h1>Numquam, magnam molestias?</h1>
+            <p>Corporis a quisquam reprehenderit quam voluptas iure atque repudiandae hic debitis, maxime cupiditate
+                expedita ullam natus temporibus impedit id corrupti modi iusto nisi aliquid consequatur accusantium
+                culpa assumenda. Doloremque, molestiae.</p>
+            <h1>Dolorem, ipsam aperiam.</h1>
+            <p>Ad, itaque placeat labore ut voluptatem nihil. Doloremque sit quos magnam veritatis hic temporibus, quo
+                reprehenderit earum, ducimus fuga quas! Distinctio iure error autem inventore possimus odit enim,
+                laborum tempora!</p>
+            <h1>Excepturi, minima dolorum.</h1>
+            <p>Aperiam, et expedita. Commodi magnam facere dolore cum sed necessitatibus deserunt totam similique
+                debitis consequatur fuga delectus voluptate neque rem ipsum perferendis praesentium nesciunt amet
+                fugiat, a, unde laboriosam minus!</p>
+            <h1>Esse, odit deleniti.</h1>
+            <p>Asperiores quia dolorem laborum rem vel consequuntur corrupti excepturi dolore ad, fuga harum, debitis
+                sit nam, ipsa qui libero a aut facilis iure! Qui odio delectus perspiciatis illo ipsa illum?</p>
+            <h1>Itaque, voluptatem perferendis?</h1>
+            <p>Eligendi aut ex adipisci dolores voluptas quam totam commodi? Saepe hic quod sapiente praesentium nostrum
+                temporibus modi autem earum ea tenetur! Eveniet ut odit doloribus ducimus maiores delectus, tempore
+                magnam.</p>
+            <h1>Tenetur, fugiat deleniti.</h1>
+            <p>Quos blanditiis dolorum qui, architecto officia minus, ipsum quo, odit quibusdam excepturi quasi. Aut,
+                perspiciatis possimus et recusandae, impedit culpa doloremque optio pariatur, sint eaque dicta. Culpa
+                temporibus quasi itaque.</p>
+            <h1>Ducimus, sapiente debitis?</h1>
+            <p>Animi cumque voluptates vero, cum pariatur modi asperiores velit distinctio harum at omnis ab perferendis
+                necessitatibus molestiae ipsum dicta quos esse provident quod totam praesentium rem enim labore minima.
+                Commodi?</p>
+            <h1>Saepe, explicabo facilis.</h1>
+            <p>Ea nesciunt pariatur repellendus aliquam porro sint illo doloremque impedit. Sapiente illo consequuntur
+                quasi? Amet laborum rerum suscipit placeat dolorum quibusdam ipsam nihil ab commodi ipsum, blanditiis
+                saepe minima nobis.</p>
+            <h1>Totam, ex accusantium!</h1>
+            <p>Quaerat sunt saepe vero, ipsa nisi porro repudiandae voluptate enim consequuntur sed eum molestiae quas
+                doloremque culpa ullam rem at possimus explicabo nobis ut dolores veritatis. Provident inventore aut
+                odio.</p>
+            <h1>Facilis, distinctio eius.</h1>
+            <p>Reprehenderit voluptatum provident molestiae tenetur maxime asperiores odit, est magnam modi nihil
+                maiores numquam praesentium laborum. Itaque, ad, harum, nulla voluptatem dolore hic consectetur quasi
+                laudantium magni necessitatibus eius quod.</p>
+            <h1>Unde, accusantium eveniet?</h1>
+            <p>Fugit quisquam quaerat, vitae, quod unde optio magni amet tempora rem ipsam ipsum ea eius maxime minima
+                tempore. Earum quam enim illum magnam eaque quae, sequi adipisci accusamus distinctio sunt.</p>
+            <h1>Cum, nam voluptatibus?</h1>
+            <p>Tempora ad, in aliquam perferendis deleniti nostrum libero odit ratione est minima cum minus ab quaerat
+                earum vitae eos odio maxime aliquid ea. In quae magni deserunt fugit ea velit?</p>
+            <h1>Accusantium, ex tempora.</h1>
+            <p>Unde sed facere fuga. Distinctio repellendus nemo sequi. Ipsum architecto explicabo consectetur. Ratione
+                fugiat ullam maxime tempore distinctio laborum obcaecati necessitatibus blanditiis molestias, odio eius
+                est mollitia et, nobis praesentium?</p>
+        </div>
+        <div class="ad-container">
+            <img src="../html/GithubCat_img.png" width="200px">
+        </div>
+    </div>
+</body>
+
+</html>

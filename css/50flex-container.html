@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            display: flex;
+            justify-content: flex-start; /* 왼쪽, 오른쪽, 가운데, 띄어쓰기 등등 */
+            height: 300px;
+            background-color: gray;
+        }
+
+        .item {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        .item:nth-child(odd) {
+            background-color: blue;
+            color: white;
+        }
+
+        .item:nth-child(even) {
+            background-color:  yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.item#item$*5{$} -->
+    <div class="container">
+        <div class="item" id="item1">1</div>
+        <div class="item" id="item2">2</div>
+        <div class="item" id="item3">3</div>
+        <div class="item" id="item4">4</div>
+        <div class="item" id="item5">5</div>
+    </div>
+
+    <hr>
+
+    <style>
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+        }
+
+        .left-menu, .right-menu {
+            display: flex;
+        }
+        
+        .menu-item {
+            background-color: black;
+            color: white;
+            padding: 7px;
+        }
+    </style>
+
+    <!-- .menu>.left-menu>.menu-item*3>lorem1^^.right-menu>.menu-item*2>lorem1 -->
+    <div class="menu">
+        <div class="left-menu">
+            <div class="menu-item">Lorem.</div>
+            <div class="menu-item">Commodi.</div>
+            <div class="menu-item">Quo?</div>
+        </div>
+        <div class="right-menu">
+            <div class="menu-item">Lorem.</div>
+            <div class="menu-item">Enim?</div>
+        </div>
+    </div>
+
+
+</body>
+</html>

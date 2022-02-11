@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .top, 
+        .nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav {
+            background-color: black;
+            color: white;
+        }
+
+        .top-left,
+        .top-right,
+        .nav-left,
+        .nav-right {
+            display: flex;
+        }
+
+        .top-menu-item,
+        .nav-menu-item {
+            padding: 10px 20px;
+        }
+
+        .nav-right > .nav-menu-item {
+            font-size: 2em;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- .top>.left>.top-menu-item*5{LINK}^.right>.top-menu-item*3{LINK} -->
+    <div class="top">
+        <div class="top-left">
+            <div class="top-menu-item">LINK</div>
+            <div class="top-menu-item">LINK <i class="fa-solid fa-caret-down"></i></div>
+            <div class="top-menu-item">LINK<i class="fa-solid fa-caret-down"></i></div>
+            <div class="top-menu-item">LINK<i class="fa-solid fa-caret-down"></i></div>
+            <div class="top-menu-item">LINK</div>
+        </div>
+        <div class="top-right">
+            <div class="top-menu-item">LINK</div>
+            <div class="top-menu-item">LINK</div>
+            <div class="top-menu-item">LINK</div>
+        </div>
+    </div>
+
+    <!-- .nav>.nav-left>.nav-menu-item*16{LINK}^.nav-right>.nav-menu-item*3{🍗} -->
+    <div class="nav">
+        <div class="nav-left">
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-menu-item"><i class="fa-solid fa-circle-half-stroke"></i></div>
+            <div class="nav-menu-item"><i class="fa-solid fa-earth-americas"></i></div>
+            <div class="nav-menu-item"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+    </div>
+
+
+    <style>
+        .main-container {
+            display: flex;
+            height: 1200px;
+        }
+
+        .main-left,
+        .main-right {
+            width: 200px;
+            background-color: grey;
+        }
+        
+        .main-content {
+            flex: 1;
+        }
+    </style>
+    <!-- .main-container>.main-left+.main-content+.main-right -->
+    <div class="main-container">
+        <div class="main-left">
+            <!-- .main-left-menu-item*30>lorem1 -->
+            <div class="main-left-menu-item">Lorem.</div>
+            <div class="main-left-menu-item">Architecto!</div>
+            <div class="main-left-menu-item">Corrupti!</div>
+            <div class="main-left-menu-item">Animi!</div>
+            <div class="main-left-menu-item">Cumque?</div>
+            <div class="main-left-menu-item">Dolore?</div>
+            <div class="main-left-menu-item">Animi.</div>
+            <div class="main-left-menu-item">Dicta?</div>
+            <div class="main-left-menu-item">Iusto?</div>
+            <div class="main-left-menu-item">Assumenda!</div>
+            <div class="main-left-menu-item">Pariatur?</div>
+            <div class="main-left-menu-item">Fuga.</div>
+            <div class="main-left-menu-item">Iusto.</div>
+            <div class="main-left-menu-item">Vero!</div>
+            <div class="main-left-menu-item">Commodi.</div>
+            <div class="main-left-menu-item">Praesentium?</div>
+            <div class="main-left-menu-item">Animi!</div>
+            <div class="main-left-menu-item">Corrupti.</div>
+            <div class="main-left-menu-item">Tempore.</div>
+            <div class="main-left-menu-item">Cum?</div>
+            <div class="main-left-menu-item">Corrupti!</div>
+            <div class="main-left-menu-item">Eaque!</div>
+            <div class="main-left-menu-item">Sequi?</div>
+            <div class="main-left-menu-item">Optio.</div>
+            <div class="main-left-menu-item">Quis?</div>
+            <div class="main-left-menu-item">Ut.</div>
+            <div class="main-left-menu-item">Laborum!</div>
+            <div class="main-left-menu-item">Iste.</div>
+            <div class="main-left-menu-item">Molestias.</div>
+            <div class="main-left-menu-item">Ullam.</div>
+        </div>
+        <div class="main-content">
+            <!-- h1>lorem3^button*2 -->
+            <h1>
+                Lorem, ipsum dolor.
+            </h1>
+
+
+            <style>
+                .button-container {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            </style>
+
+            <div class="button-container">
+                <button>home</button>
+                <button>next</button>
+            </div>
+        </div>
+        <div class="main-right"></div>
+    </div>
+</body>
+</html>

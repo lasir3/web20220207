@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #ex1 {
+            width: 200px;
+            height: 70px;
+            background-color: aqua;
+        }
+
+        #ex2 {
+            width: 200px;
+            height: 70px;
+            padding: 15px;
+            background-color: gold;
+        }
+
+        #ex3 {
+            width: 200px;
+            height: 70px;
+            padding: 15px;
+            border: 5px solid black;
+            /* padding 영역은 포함되지 않기 때문에 의도한 사이즈보다 커진다 */
+        }
+
+        #ex4 {
+            width: 200px;
+            height: 70px;
+            padding: 15px;
+            border: 5px solid red;
+            box-sizing: border-box;
+            /* border padding을 합쳐서 영역 계산*/
+        }
+
+        #ex5 {
+            width: 200px;
+            height: 70px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- #ex$*5>{$} -->
+    <div id="ex1">1</div>
+    <div id="ex2">2</div>
+    <div id="ex3">3</div>
+    <div id="ex4">4</div>
+    <div id="ex5">5</div>
+</body>
+</html>

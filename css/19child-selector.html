@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        li {
+            background-color: gold;
+        }
+
+        ul > li {
+            text-decoration: line-through;
+        }
+        /* ul의 "자식"으로 있는 li element(">") */
+
+        ol > li{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ul>li*3>lorem1^^ol>li*3>lorem1 -->
+    <ul>
+        <li>Lorem.</li>
+        <li>Id.</li>
+        <li>At.</li>
+    </ul>
+    <ol>
+        <li>Lorem.</li>
+        <li>Rerum!</li>
+        <li>Alias?</li>
+    </ol>
+
+</body>
+</html>

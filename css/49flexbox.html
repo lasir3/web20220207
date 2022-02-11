@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .item {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .item:nth-child(odd) {
+            background-color: gold;
+            color: deeppink;
+        }
+
+        .item:nth-child(even) {
+            background-color: indigo;
+            color: white;
+        }
+
+        .box {
+            display: flex;
+            /* 가장 높은 높이값을 기준으로 가지고 가로로 배치함 */
+            height: 300px;
+        }
+
+        .menu-container {
+            display: flex;
+            background-color: gold;
+        }
+
+        .menu-item {
+            color: indigo;
+            border: 2px solid gold;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px 4px;
+            box-sizing: border-box;
+            /* element 전체크기에 border와 padding을 포함시킨다 */
+        }
+        .menu-item:hover {
+            background-color: aqua;
+            border-color: aqua;
+            border-bottom-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- #ex$.item*5{$} -->
+        <div id="ex1" class="item">1</div>
+        <div id="ex2" class="item">2</div>
+        <div id="ex3" class="item">3</div>
+        <div id="ex4" class="item">4</div>
+        <div id="ex5" class="item">5</div>
+    </div>
+
+    <hr>
+
+    <!-- .menu-container>.menu-item*5>lorem1 -->
+    <div class="menu-container"> <!-- flexbox, flex container-->
+        <div class="menu-item">Lorem.</div> <!-- flex item -->
+        <div class="menu-item">Illo.</div>
+        <div class="menu-item">Sequi!</div>
+        <div class="menu-item">Aperiam!</div>
+        <div class="menu-item">Ducimus.</div>
+    </div>
+</body>
+
+</html>

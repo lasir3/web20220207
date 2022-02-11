@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table,  td {
+            border: 2px solid black;
+        }
+        /* 그룹 selector로 사용할 수 있다 */
+
+    tr:nth-child(even){
+        background-color: aqua;
+    }
+
+    td:hover {
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <!-- table>tr*3>td*4>lorem1 -->
+    <table>
+        <!-- tr>th*4>lorem1 -->
+        <tr>
+            <th>Lorem.</th>
+            <th>Nihil!</th>
+            <th>Asperiores?</th>
+            <th>Quis.</th>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Alias?</td>
+            <td>Molestias.</td>
+            <td>Porro.</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Maiores?</td>
+            <td>Distinctio?</td>
+            <td>Obcaecati?</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Iure.</td>
+            <td>Possimus.</td>
+            <td>Corrupti!</td>
+        </tr>
+    </table>
+</body>
+</html>

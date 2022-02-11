@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1#head4.note{
+            color: aqua;
+            /* 111점 */
+        }
+
+        .error{
+            color: red;
+            /* 10점 */
+        }
+        
+        .note.error{
+            color: gold;
+            /* 20점 */
+        }
+        
+        .note{
+            color: blue;
+            /* 10점 */
+        }
+
+        #head3{
+            color: brown;
+            /* 100점 */
+        }
+    </style>
+    <!-- selector에 마우스 커서를 올려 selector의 갯수와 우선순위 알 수 있다 -->
+    <!-- (id(100), class(10), element(1)) -->
+    <!-- 우선순위는 id, class, element 순으로 높고 같은 우선순위를 가진 selector일 경우 마지막에 작성된 항목이 적용된다 -->
+</head>
+<body>
+    <!-- h1#head$.note*2>lorem3 -->
+    <h1 id="head1" class="note">Lorem, ipsum dolor.</h1>
+    <h1 id="head2" class="note">Nostrum, neque numquam.</h1>
+
+    <!-- h1#head$@3.note.error*2>lorem3 -->
+    <h1 id="head3" class="note error">Lorem, ipsum dolor.</h1>
+    <h1 id="head4" class="note error">Sequi, esse ab!</h1>
+</body>
+</html>

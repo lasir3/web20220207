@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            color:blue;
+        }
+
+        .note{
+            text-decoration: underline;
+        }
+
+        .error{
+            text-decoration: line-through;
+        }
+
+        #head3{
+            font-size: 3em;
+        }
+
+        .note.error{
+            color: red;
+        }
+        /* 여러가지 class selector를 동시에 지정할 수 있다 */
+        /* 띄어쓰기를 하지 않는다 */
+
+        p.note{
+            font-family: D2Coading, monospace;
+        }
+        /* 서로다른 selector를 조합할 수 있다 */
+    </style>
+</head>
+<body>
+    <!-- h1#head$.note*3>lorem3 -->
+    <h1 id="head1" class="note">Lorem, ipsum dolor.</h1>
+    <h1 id="head2" class="note">Fugiat, perspiciatis similique.</h1>
+    <h1 id="head3" class="note">Ipsam, dolore tenetur.</h1>
+
+    <!-- h1#head$@4.error*3>lorem3 -->
+    <h1 id="head4" class="error">Lorem, ipsum dolor.</h1>
+    <h1 id="head5" class="error">Accusamus, exercitationem sunt.</h1>
+    <h1 id="head6" class="error">Est, fugiat voluptas.</h1>
+
+    <!-- h1#head$@7.note.error*2>lorem3 -->
+    <h1 id="head7" class="note error">Lorem, ipsum dolor.</h1>
+    <h1 id="head8" class="note error">Consequuntur, est totam.</h1>
+
+    <!-- p.note*2>lorem -->
+    <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, pariatur eaque mollitia officiis reiciendis, tenetur tempora voluptatum illum animi blanditiis facere neque dolorum quo atque impedit dolore facilis vero temporibus?</p>
+    <p class="note">Porro, provident ipsam qui dolorum ex cum tenetur amet. Fugiat perspiciatis deleniti qui unde ipsum aliquam recusandae et accusantium placeat nemo veritatis sint, eum excepturi autem laborum. Eligendi, obcaecati autem.</p>
+</body>
+</html>

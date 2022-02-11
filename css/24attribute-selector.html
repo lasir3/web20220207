@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        [title^="j"] {
+            color: blue;
+        }
+        /* j로 시작하는 title attribute를 선택 */
+
+        [title$="a"] {
+            background-color: gold;
+        }
+        /* a로 끝나는 title attribute를 선택 */
+
+        h1[title$="a"] {
+            font-size: 3em;
+        }
+        /* h1 elements 중 a로 끝나는 title attribute를 선택 */
+
+        [title*="u"] {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1[title]*5>lorem3 -->
+    <h1 title="jimin">Lorem, ipsum dolor.</h1>
+    <h1 title="jungkuk">Incidunt, dolorem provident.</h1>
+    <h1 title="rm">At, provident! Error?</h1>
+    <h1 title="v">Unde, vel architecto.</h1>
+    <h1 title="suga">Assumenda, commodi fuga?</h1>
+
+    <!-- h2[title]*3>lorem3 -->
+    <h2 title="korea">Lorem, ipsum dolor.</h2>
+    <h2 title="seoul">Quasi, exercitationem. Error.</h2>
+    <h2 title="asia">Error, deleniti mollitia.</h2>
+</body>
+</html>

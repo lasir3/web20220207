@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1:nth-child(1){
+            color: red;
+        }
+        /* h1 element 이면서 첫번째 자식 */
+
+        p:nth-child(4){
+            color: yellow;
+        }
+        /* p element 이면서 4번째 자식(위에 3개의 h1자식들이 존재) */
+
+        h1:nth-child(odd){
+            text-decoration: underline;
+        }
+        /* h1 element 이면서 홀수 번째 자식들 */
+        p:nth-child(even){
+            text-decoration: line-through;
+        }
+        /* p element 이면서 짝수 번째 자식들 */
+    </style>
+</head>
+<body>
+    <!-- h1*3>lorem3^p*3>lorem -->
+    <h1>Lorem, ipsum dolor.</h1>
+    <h1>Molestiae, incidunt molestias!</h1>
+    <h1>Nostrum, nobis possimus.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusantium tempore harum. Iste fugit magnam magni laborum veniam quas. Rem a enim aut soluta, voluptates laudantium neque quas necessitatibus minima.</p>
+    <p>Quidem nostrum ratione doloremque in dolore facere. Non soluta, a hic vero cumque, nam facilis adipisci, minus explicabo deserunt deleniti. Eligendi veniam, dolore quis doloremque debitis corporis facilis eius cupiditate.</p>
+    <p>Facilis temporibus libero eveniet dignissimos, est, delectus quisquam omnis esse laudantium sequi autem cumque earum voluptatum molestiae distinctio corrupti iste? Nobis, consectetur. Officia, eum amet est facilis fuga aliquid voluptatum!</p>
+</body>
+</html>
