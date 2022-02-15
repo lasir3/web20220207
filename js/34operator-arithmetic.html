@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        // 연산의 결과는 사용하는 연산자의 피연산자의 타입에 따라 달라짐
+        // 두항의 타입 : number
+        console.log(3 - 4);
+        console.log(3 * 4);
+        console.log(3 / 4);
+
+        // 두상의 타입 : string
+        // number로 자동 변환
+        console.log("3" - "4");
+        console.log("3" * "4");
+        console.log("3" / "4");
+
+        // number로 변환 안됨
+        //NaN(Not a Number) 출력
+        console.log("three" - "four"); 
+        console.log("3" - "four");
+        console.log("three" * "four");
+        console.log("three" / "four");
+
+        // + : 피연산자의 타입에 따라 결과가 달라짐
+        // 피연산자가 모두 number면 결과는 number
+        console.log(3 + 4);
+        // 피연산자중 하나라도 string이면 결과는 string; (연결연산자 concatenate)
+        console.log("3" + 4);
+        console.log("three" + 4);
+        console.log(3 + "4");
+        console.log(3 + "four");
+        console.log("3" + "4");
+        console.log("three" + "four");
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
