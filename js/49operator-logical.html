@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+    <!-- .container>.row>.col*3^.row -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>player 1</h1>
+                <!-- select#select1>option*3 -->
+                <select name="" id="select1">
+                    <option value="s">가위</option>
+                    <option value="r">바위</option>
+                    <option value="p">보</option>
+                </select>
+            </div>
+            <div class="col">
+                <!-- .btn.btn-primary{결과보기} -->
+                <div id="button1" class="btn btn-primary">결과보기</div>
+            </div>
+            <div class="col">
+                <h1>player 2</h1>
+                <!-- select#select1>option*3 -->
+                <select name="" id="select2">
+                    <option value="s">가위</option>
+                    <option value="r">바위</option>
+                    <option value="p">보</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <!-- h1#result1 -->
+            <h1 id="result1"></h1>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector("#button1").onclick = function() {
+            let p1 = document.querySelector("#select1").value;
+            let p2 = document.querySelector("#select2").value;
+
+            console.log(p1);
+            console.log(p2);
+
+            if (p1 === p2) {
+                console.log("비겼습니다.");
+                document.querySelector("#result1").innerHTML = "비겼습니다.";
+                
+            } else if ((((p1 === "s") && (p2 === "p"))) || (((p1 === "r") && (p2 === "s"))) || (((p1 === "p") && (p2 === "r")))) {
+                console.log("Player1이 이겼습니다.")
+                document.querySelector("#result1").innerHTML = "Player1이 이겼습니다.";
+
+            } else {
+                console.log("Player2이 이겼습니다.")
+                document.querySelector("#result1").innerHTML = "Player2가 이겼습니다.";
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

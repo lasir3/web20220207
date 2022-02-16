@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+
+    <script>
+    // 비교 연산자
+    // 같다, 같지않다, 크다, 크거나 같다, 작다, 작거나 같다
+    // == ,  !=       , >  , >=         , <   ,  <=
+    // ===,  !==
+
+    // 연산의 결과가 boolean
+
+    let a = 3;
+    let b = 5;
+
+    console.log(3 == 5); // false
+    console.log(3 != 5); // true
+    console.log(3 > 5); // false
+    console.log(3 >= 5); // false
+    console.log(3 < 5); // true
+    console.log(3 <= 5); // true
+
+    // 다른 타입끼리 비교 (권장하지 않음)
+
+    let c = "3"; // string
+    let d = 3; // number
+
+    console.log(c == d); // 값이 같은가? true
+    console.log(c === d); // 갑도 같고 타입도 같은가? false
+
+    let e = "5" // string
+    let f = 6; // number
+    console.log(e != f); // true (값이 다른가?)
+    console.log(e !== f); // true (값이 다르거나 타입이 다른가?)
+
+    // 다른 타입끼리 비교할 때
+    // 피연산자의 타입이 하나라도 number이면 
+    // 두개의 피연산자를 모두 number로 변환해서 비교
+    let g = "12";
+    let h = 2;
+
+    console.log(g > h); // true
+    console.log(g < h); // false
+
+    let i = "12";
+    let j = "2";
+    console.log(i > j); // false (문자의 코드 순서로 비교)
+
+    // 특별한 이유가 없는 한
+    // 같은 타입끼리 비교해야 함
+
+    let k = "12";
+    let l = 2;
+
+    let m = Number(k);
+    console.log(k > l); // true
+
+    let n = 2 + "";
+    console.log(k > n); // false
+
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
