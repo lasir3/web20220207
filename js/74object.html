@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+    
+    <script>
+        
+        let a = function() {
+            return {
+                aprop : 9,
+                bprop : "java"
+            }
+        };
+
+        console.log(a().aprop);
+        console.log(a().bprop); // a 함수 실행 후 리턴된 객체의 bprop
+
+        let b = function(a) { 
+            return {
+                double : a * 2, // 객체
+                triple : a * 3 // 객체
+            }
+        };
+
+        console.log(b(10).double);
+        console.log(b(10).triple);
+
+        console.log(b(30).double);
+        console.log(b(30).triple);
+
+        let c = b(50);
+        console.log(c.double);
+        console.log(c.triple);
+
+        let d = {
+            amethod : function(x) {
+                return {
+                    double : x * 2,
+                    triple : x * 3
+                }
+            }
+        };
+
+        console.log(d.amethod(3).double);
+        console.log(d.amethod(3).triple);
+
+        let e = d.amethod(4);
+        console.log(e.double);
+        console.log(e.triple);
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

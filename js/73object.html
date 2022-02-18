@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+    
+    <script>
+
+        let a = {
+            name : "donald",
+            age : 300,
+            // property
+
+            move : function() {
+                console.log(3);
+            },
+            // method
+
+            stop : function() {
+                console.log("stop");
+            },
+
+            amethod : function(a) {
+                console.log(a);
+            },
+
+            bmethod : function(a, b) {
+                console.log(a + b);
+            },
+
+            cmethod : function() {
+                return 999;
+            },
+            
+            dmethod : function(a) {
+                return a * 3;
+            }
+        };
+
+        // method : 객체가 가진 함수
+
+        a.move();
+        a.stop();
+        a.amethod("hello")
+        a.bmethod(4, 3);
+        console.log(a.cmethod());
+        console.log(a.dmethod(9));
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
