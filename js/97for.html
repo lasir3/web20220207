@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+    
+    <!-- h1*2>lorem1^h1.note*2>lorem1^p*2>lorem1^p.note*2>lorem1 -->
+    <h1>
+        Lorem.
+    </h1>
+    <h1>
+        Deserunt.
+    </h1>
+    <h1 class="note">
+        Lorem.
+    </h1>
+    <h1 class="note">
+        Dolores?
+    </h1>
+    <p>
+        Lorem.
+    </p>
+    <p>
+        Dicta!
+    </p>
+    <p class="note">
+        Lorem.
+    </p>
+    <p class="note">
+        Perspiciatis!
+    </p>
+
+    <script>
+        // 문제 : note 클래스를 가진 요소의 콘텐츠를 출력하세요.
+        // 코드작성
+
+        let notes = document.getElementsByClassName("note");
+
+        // for (let i = 0; i < notes.length; i++) {
+        //     console.log(notes[i].innerHTML);
+        // }
+
+        for (let note of notes) {
+            console.log(note.innerHTML);
+        }
+
+        let paras = document.querySelectorAll("p");
+        for (let i = 0; i < paras.length; i++) {
+            paras[i].onclick = function (){
+                console.log(this.innerHTML);
+            }
+        }
+
+        // h1요소를 클릭했을 때 콘텐츠가 출력되도록
+        // 코드 작성
+
+        let heads = document.querySelectorAll("h1");
+        for (let i = 0; i < heads.length; i++) {
+            heads[i].onclick = function() {
+                console.log(this.innerHTML);
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

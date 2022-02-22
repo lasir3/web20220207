@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        let arr1 = [4, 7, 1, 2];
+        for (let i = 0; i < arr1.length; i++) {
+            console.log(arr1[i]);
+        }
+
+        for (let item of arr1) {
+            console.log(item);
+        }
+
+        let str = "script";
+        for (let c of str) {
+            console.log(c);
+        }
+
+        // console.log(str[0]);
+        for (let i = 0; i < str.length; i++) {
+            console.log(str[i]);
+        }
+
+        // 문제 : "script"를 거꾸로 가진 string 변수 reverseStr 출력
+        // 코드 작성
+        let reverseStr = "";
+
+        for (let c of str) {
+            reverseStr = c + reverseStr;
+        }
+
+        console.log(reverseStr); // "tpircs"
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

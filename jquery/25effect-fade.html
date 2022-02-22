@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        #head2 {
+            display: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $("#head1").fadeOut();
+            });
+
+            $("#button2").click(function(){
+                $("#head2").fadeIn();
+            });
+
+            $("#button3").click(function(){
+                $("#head3").fadeOut(3000);
+            });
+
+            $("#button4").click(function(){
+                $("#head4").fadeOut("slow");
+            });
+
+            $("#button5").click(function(){
+                $("#head5").fadeToggle();
+            });
+
+            $("#button6").click(function(){
+                $("#head6").fadeToggle(2000);
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <!-- (button#button$+h1#head$>lorem1^br)*10 -->
+    <button id="button1">fadeOut</button>
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <br>
+    <button id="button2">fadeIn</button>
+    <h1 id="head2">
+        Explicabo.
+    </h1>
+    <br>
+    <button id="button3">fadeOut milliseconds</button>
+    <h1 id="head3">
+        Inventore?
+    </h1>
+    <br>
+    <button id="button4">fadeOutSlow</button>
+    <h1 id="head4">
+        Corrupti?
+    </h1>
+    <br>
+    <button id="button5">fadeToggle</button>
+    <h1 id="head5">
+        Obcaecati.
+    </h1>
+    <br>
+    <button id="button6">fadeToggle 2000ms</button>
+    <h1 id="head6">
+        Nam.
+    </h1>
+    <br>
+    <button id="button7"></button>
+    <h1 id="head7">
+        Ipsa.
+    </h1>
+    <br>
+    <button id="button8"></button>
+    <h1 id="head8">
+        Fugit.
+    </h1>
+    <br>
+    <button id="button9"></button>
+    <h1 id="head9">
+        Nemo!
+    </h1>
+    <br>
+    <button id="button10"></button>
+    <h1 id="head10">
+        Minima?
+    </h1>
+    <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
