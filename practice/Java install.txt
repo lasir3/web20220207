@@ -1,0 +1,7 @@
+설정-환경-시스템속성-고급 -환경 변수
+시스템변수 새로만들기 - 
+이름 : JAVA_HOME
+변수 값:C:\Program Files\Java\jdk1.8.0_311
+
+Path 시스템변수 편집-
+새로만들기 - C:\Program Files\Java\jdk1.8.0_311\bin 추가
